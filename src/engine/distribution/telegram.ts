@@ -3,8 +3,6 @@ import { Telegraf } from 'telegraf';
 export function notEmpty<TValue>(value: TValue | null | undefined): value is TValue {
     return value !== null && value !== undefined;
 }
-
-console.log(process.env);
 const chatId = process.env.TEST_CHAT_ID;
 if (!process.env.BOT_TOKEN) {
     throw new Error('Missing telegram bot token')

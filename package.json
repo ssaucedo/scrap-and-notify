@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/src/web/index.js",
+    "chat": "node dist/engine/telegram/index.js",
     "start:ws": "yarn build && node dist/web/index.js"
   },
   "dependencies": {
