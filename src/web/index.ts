@@ -1,8 +1,7 @@
-import express from 'express';
-import env from 'dotenv';
-import { Engine } from '../engine';
 
-env.config();
+import './init';
+import express from 'express';
+import { Engine } from '../engine';
 
 const app = express();
 app.use(express.json());

@@ -1,3 +1,7 @@
+import path from 'path';
+import env from 'dotenv';
+env.config({ path: path.resolve(__dirname, '../.env') });
+
 import { Telegraf } from 'telegraf';
 import { Update, Message } from 'typegram';
 
@@ -11,6 +15,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN);
 
 const logChatId = async () => {
     const res = await bot.telegram.getUpdates(1000, 100, 0, ['message']);
+    console.log(res);
     res.forEach((update) => {
         try {
             const adaptedUpdate = update as MessageUpdate;
