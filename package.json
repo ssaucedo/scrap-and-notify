@@ -1,0 +1,30 @@
+{
+  "name": "scrap-and-notify",
+  "version": "1.0.0",
+  "main": "dist/index.ts",
+  "author": "Santiago Saucedo",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/web/index.js",
+    "start:ws": "yarn build && node dist/web/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.1",
+    "nodemailer": "^6.6.1",
+    "puppeteer": "^10.0.0",
+    "ramda": "^0.27.1",
+    "telegraf": "^4.4.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/ramda": "^0.27.44",
+    "@types/nodemailer": "^6.4.2",
+    "@types/puppeteer": "^5.4.3",
+    "@types/uuid": "^8.3.1",
+    "typescript": "^4.3.2"
+  }
+}
