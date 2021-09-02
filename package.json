@@ -7,6 +7,7 @@
   "scripts": {
     "build": "tsc",
     "chat": "node dist/chat.js",
+    "scrap": "yarn build && node dist/script/index.js",
     "start:ws": "yarn build && node dist/web/index.js"
   },
   "dependencies": {
